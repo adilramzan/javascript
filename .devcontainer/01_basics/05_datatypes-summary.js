@@ -57,3 +57,32 @@ let myObj = {
 let isAlive = function(){
     console.log("No");
 }
+
+
+//==========================================================//
+
+/*
+    Memory
+    Stack(Primitive) : get a copy
+
+    Heap(Non Primitive): get a reference
+*/
+
+let myName = "Adil Ramzan"
+let myOtherName = myName
+console.log(myOtherName);
+myOtherName = "adilramzan"
+console.log(myName);
+console.log(myOtherName);
+
+let userOne = {
+    email:"user@gmail.com",
+    name:"user1",
+}
+
+console.log(userOne.email);
+
+let userTwo = userOne
+userTwo.email = "rock@gmail.com"
+
+console.log(userTwo.email);
