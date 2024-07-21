@@ -58,3 +58,60 @@ console.log(tagline.indexOf('x')); //-1 not present in string
 const firstOccurance = tagline.indexOf("developers")
 const secondOccurance = tagline.indexOf("developers",firstOccurance+1)
 console.log(secondOccurance);
+
+//slice() to extract a substring from a string
+console.log(browserName.slice(2,5));
+console.log(browserName.slice(2));
+
+
+//to lower case and uppercase
+console.log(browserName.toLowerCase());
+console.log(browserName.toUpperCase());
+
+//replace
+const updated = browserName.replace("moz","van")
+console.log(updated);
+
+//replaceall
+let qoute = "To be or not to be"
+qoute = qoute.replaceAll("be","code")
+console.log(qoute);
+
+console.log(browserName.slice(-6,5));//ozil 
+
+//trim()
+
+const newString = "  adil  "
+console.log(newString);
+console.log(newString.trim());
+
+//cleaning string replace(/[^A-Za-z0-9]+/g,'')
+function removeSpecialCharacters (inputString){
+    return inputString.replace(/[^A-Za-z0-9]+/g,'')
+}
+
+let inputString = "  ad#i-l@/ "
+let cleanString = removeSpecialCharacters(inputString)
+console.log(cleanString)
+
+const strToArr = "adil.ramzan.33.com"
+console.log(strToArr.split("."));
+
+console.log(`my name is ${name} and my repo count is ${repoCount} and i am using ${browserName} firefox browser.`);
+
+/*
+.split()
+.replace()
+.toUpperCase()
+.toLowerCase()
+.trim()
+.charAt()
+.indexOf()
+.replaceAll()
+.slice()
+.substring()
+.includes()
+.startWith()
+.endsWith()
+.length
+*/
